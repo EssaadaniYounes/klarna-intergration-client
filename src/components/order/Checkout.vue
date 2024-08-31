@@ -74,33 +74,7 @@ const handleCheckout = async (paymentGateway) => {
       </div>
     </div>
     <div class="mt-10 flex flex-col items-center">
-      <h4 class="text-lg font-bold mb-2">Checkout</h4>
-      <div class="space-y-3">
-        <input
-          type="text"
-          class="w-full p-2 px-4 rounded-md shadow-sm border-gray-300 focus:outline-blue-200"
-          placeholder="Full name.."
-          v-model="checkoutPayload.name"
-        />
-        <input
-          type="address"
-          class="w-full p-2 px-4 rounded-md shadow-sm border-gray-300 focus:outline-blue-200"
-          placeholder="Address.."
-          v-model="checkoutPayload.address"
-        />
-        <input
-          type="tel"
-          class="w-full p-2 px-4 rounded-md shadow-sm border-gray-300 focus:outline-blue-200"
-          placeholder="Phone.."
-          v-model="checkoutPayload.phone"
-        />
-        <input
-          type="email"
-          class="w-full p-2 px-4 rounded-md shadow-sm border-gray-300 focus:outline-blue-200"
-          placeholder="Email.."
-          v-model="checkoutPayload.email"
-        />
-      </div>
+      
       <div class="mt-4 w-full space-y-2">
         <button
           @click="handleCheckout('klarna')"
